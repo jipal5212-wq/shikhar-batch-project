@@ -1,0 +1,228 @@
+==================================================
+            LINKED LIST MANAGEMENT SYSTEM
+==================================================
+
+1. Singly Linked List
+2. Doubly Linked List
+3. Compare Singly vs Doubly Linked List
+4. Exit
+
+Enter your choice: 1
+
+********** Operation on Singly Linked List **********
+
+1. Insert at Beginning
+2. Insert at End
+3. Insert at Position
+4. Insert After a Node
+5. Insert Before a Node
+
+6. Delete from Beginning
+7. Delete from End
+8. Delete from Position
+9. Delete by Value
+
+10. Search
+11. Update
+12. Display
+13. Count Nodes
+14. Find Maximum
+15. Find Minimum
+16. Find Middle Element
+17. Reverse
+18. Sort
+19. Remove Duplicates
+20. Exit
+
+Enter the choice: 2
+Enter value to insert: 40
+Inserted 40 at end successfully.
+
+Enter the choice: 2
+Enter value to insert: 10
+Inserted 10 at end successfully.
+
+Enter the choice: 2
+Enter value to insert: 30
+Inserted 30 at end successfully.
+
+Enter the choice: 2
+Enter value to insert: 20
+Inserted 20 at end successfully.
+
+Enter the choice: 2
+Enter value to insert: 50
+Inserted 50 at end successfully.
+
+Enter the choice: 12
+Current Singly Linked List:
+40 -> 10 -> 30 -> 20 -> 50 -> NULL
+
+Enter the choice: 18
+List sorted in ascending order successfully (Bubble Sort).
+
+Enter the choice: 12
+Current Singly Linked List:
+10 -> 20 -> 30 -> 40 -> 50 -> NULL
+
+Enter the choice: 17
+List reversed successfully.
+
+Enter the choice: 12
+Current Singly Linked List:
+50 -> 40 -> 30 -> 20 -> 10 -> NULL
+
+Enter the choice: 13
+Total nodes: 5
+
+Enter the choice: 14
+Maximum value: 50
+
+Enter the choice: 15
+Minimum value: 10
+
+Enter the choice: 16
+Middle element: 30 (for even-length lists, second middle is returned)
+
+Enter the choice: 10
+Enter value to search: 30
+Value 30 found at 1-based position 3.
+
+Enter the choice: 11
+Enter existing value to update: 30
+Enter new value: 35
+Updated value 30 to 35 successfully.
+
+Enter the choice: 12
+Current Singly Linked List:
+50 -> 40 -> 35 -> 20 -> 10 -> NULL
+
+Enter the choice: 20
+Returning to Main Menu...
+
+==================================================
+            LINKED LIST MANAGEMENT SYSTEM
+==================================================
+
+1. Singly Linked List
+2. Doubly Linked List
+3. Compare Singly vs Doubly Linked List
+4. Exit
+
+Enter your choice: 2
+
+********** Operation on Doubly Linked List **********
+
+1. Insert at Beginning
+2. Insert at End
+3. Insert at Position
+4. Insert After a Node
+5. Insert Before a Node
+
+6. Delete from Beginning
+7. Delete from End
+8. Delete from Position
+9. Delete by Value
+
+10. Search
+11. Update
+12. Display Forward
+13. Display Backward
+14. Count Nodes
+15. Find Maximum
+16. Find Minimum
+17. Find Middle Element
+18. Reverse
+19. Sort
+20. Remove Duplicates
+21. Exit
+
+Enter the choice: 2
+Enter value to insert: 10
+Inserted 10 at end successfully.
+
+Enter the choice: 2
+Enter value to insert: 20
+Inserted 20 at end successfully.
+
+Enter the choice: 2
+Enter value to insert: 30
+Inserted 30 at end successfully.
+
+Enter the choice: 2
+Enter value to insert: 40
+Inserted 40 at end successfully.
+
+Enter the choice: 12
+Doubly Linked List (Forward):
+NULL <- 10 <-> 20 <-> 30 <-> 40 -> NULL
+
+Enter the choice: 13
+Doubly Linked List (Backward):
+NULL <- 40 <-> 30 <-> 20 <-> 10 -> NULL
+
+Enter the choice: 18
+List reversed successfully.
+
+Enter the choice: 12
+Doubly Linked List (Forward):
+NULL <- 40 <-> 30 <-> 20 <-> 10 -> NULL
+
+Enter the choice: 13
+Doubly Linked List (Backward):
+NULL <- 10 <-> 20 <-> 30 <-> 40 -> NULL
+
+Enter the choice: 19
+List sorted in ascending order successfully (Bubble Sort).
+
+Enter the choice: 12
+Doubly Linked List (Forward):
+NULL <- 10 <-> 20 <-> 30 <-> 40 -> NULL
+
+Enter the choice: 21
+Returning to Main Menu...
+
+==================================================
+            LINKED LIST MANAGEMENT SYSTEM
+==================================================
+
+1. Singly Linked List
+2. Doubly Linked List
+3. Compare Singly vs Doubly Linked List
+4. Exit
+
+Enter your choice: 3
+
+========================================================================================
+                        COMPARE SINGLY vs DOUBLY LINKED LIST
+========================================================================================
+Property                 | Singly Linked List            | Doubly Linked List
+-------------------------+-------------------------------+------------------------------
+Pointers per Node        | 1 (next)                      | 2 (prev and next)
+Memory Consumption       | Lower memory overhead         | Higher memory overhead
+Traversal Direction      | Forward only                  | Bidirectional (forward & back)
+Insert at Beginning      | O(1)                          | O(1)
+Insert at End            | O(n) without tail             | O(1) with tail / O(n) without
+Delete from End          | O(n) (requires traversal)     | O(1) with tail reference
+Delete Given Node Ref    | O(n) (need previous node)     | O(1) (direct relink via prev)
+Reverse Operation        | Requires pointer reversal     | Reverse pointers or read tail
+Implementation Overhead  | Simpler pointer logic         | More complex (two-way links)
+Ideal Use Cases          | Stacks, Simple queues, RAM    | Navigation, History, Playlists
+========================================================================================
+
+Summary:
+Choose Singly Linked List when memory conservation is critical and forward traversal suffices.
+Choose Doubly Linked List when backward navigation and frequent arbitrary deletions are required.
+
+==================================================
+            LINKED LIST MANAGEMENT SYSTEM
+==================================================
+
+1. Singly Linked List
+2. Doubly Linked List
+3. Compare Singly vs Doubly Linked List
+4. Exit
+
+Enter your choice: 4
+
+Exiting Linked List Management System. Goodbye!
