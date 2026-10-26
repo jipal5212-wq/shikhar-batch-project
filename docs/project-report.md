@@ -125,20 +125,3 @@ NULL <--| Prev | Data | Next | <-> | Prev | Data | Next | --> NULL
 6. **Robust Input Handling:** Console input errors (entering non-numeric characters) are intercepted with `cin.clear()` and `cin.ignore()`, preventing infinite loops.
 
 ---
-
-## 7. Viva & Evaluation Preparation
-
-1. **What is a linked list?**  
-   A linear dynamic data structure composed of distinct nodes connected via pointers or references.
-2. **Difference between an array and a linked list?**  
-   Arrays have static/contiguous memory and $O(1)$ random access, but resizing and insertions take $O(n)$ shifting. Linked lists offer dynamic sizing and $O(1)$ head insertions/deletions, but require $O(n)$ sequential access.
-3. **What is the purpose of `head` and `tail`?**  
-   `head` stores the memory address of the first node. `tail` stores the address of the last node, allowing $O(1)$ append operations.
-4. **Why is insertion at the beginning $O(1)$?**  
-   It only requires creating a node, pointing its `next` to the current `head`, and updating `head`. No traversal or shifting is involved.
-5. **How does slow and fast pointer find the middle element?**  
-   The `fast` pointer advances two nodes per iteration while the `slow` pointer advances one node. When `fast` reaches the end, `slow` is exactly at the midpoint.
-6. **How do you reverse a singly linked list in $O(1)$ extra space?**  
-   Using three pointers (`prev`, `cur`, `next`), iterate through the list, reorient each node's `cur->next` to point to `prev`, then advance `prev` and `cur`.
-7. **Why does Java not require explicit `delete` while C++ does?**  
-   Java employs an automatic Garbage Collector that detects unreferenced heap objects and frees memory. C++ requires explicit `delete` to deallocate heap memory created with `new`, preventing memory leaks.
